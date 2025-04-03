@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jquery Ajax</h1>
+    </header>
+
+    <main>
+        <h2>Drink Orders</h2>
+
+        <ul id="orders">
+        </ul>
+
+        <template class="order">
+            <li data-id={{id}} class="order">
+                <p>
+                    <strong>name: </strong>
+                    <span class="noedit name">{{name}}</span>
+                    <input type="text" class="edit name">
+                </p>
+
+                <p>
+                    <strong>drink: </strong>
+                    <span class="noedit drink">{{drink}}</span>
+                    <input type="text" class="edit drink">
+                </p>
+                <button data-id='{{id}}' class='remove-button'>X</button>
+                <button class="noedit edit-button">Edit</button>
+                <button class="edit save-button">Save</button>
+                <button class="edit cancel-button">Cancel</button>
+            </li>
+        </template>
+
+        <h2>Add a Drink Order</h2>
+
+
+        <ul class="input">
+            <li>name:</li>
+            <li><input id="name" type="text"></li>
+        </ul>
+
+        <ul class="input">
+            <li>drink:</li>
+            <li><input id="drink" type="text"></li>
+        </ul>
+        
+        <input id="add-button" type="button" value="Add!">
+    </main>
+
+    <script src="./scripts/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+    <script src="./scripts/main.js"></script>
+
+    <script>
+        $("input.name").value = "ABC"
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            height: 200px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+
+        .todo-list input {
+            display: none;
+        }
+
+        .todo-list li.edit input{
+            display: block;    
+        }
+
+        .todo-list li.edit span {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Javascript Events</header>
+
+    <main>
+        <h3>Add two numbers:</h3>
+        <p>
+            <input id="first-number" class="first-number" type="text"> + <input id="second-number" class="second-number" type="text">
+        </p>
+        <p id="sum-number" class="sum-number"></p>
+
+
+
+        <h3>Images</h3>
+
+        <ul>
+            <li><a data-img="cat-pic" id="cat" href="#">Cat</a></li>
+            <li><a data-img="husky-pic" id="husky" href="#">Husky</a></li>
+            <li><a data-img="fish-pic" id="fish" href="#">Fish</a></li>
+        </ul>
+
+
+        <img id="cat-pic" class="hide" src="images/cat_suqare.JPG" alt="Cat">
+        <img id="husky-pic" class="hide" src="images/husky.jpeg" alt="Husky">
+        <img id="fish-pic" class="hide" src="images/fish.jpeg" alt="Fish">
+
+
+        <h3>Todo Lists</h3>
+
+        <ul class="todo-list">
+            <li>
+                <span>Apples</span>
+                <input type="text" value="Apples">
+            </li>
+            <li>
+                <span>Bananas</span>
+                <input type="text" value="Bananas">
+            </li>
+            <li>
+                <span>Oranges</span>
+                <input type="text" value="Oranges">
+            </li>
+        </ul>
+    </main>
+
+
+    <script src="scripts/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.tab-button{
+    padding-left: 10px;
+    margin-bottom: 0;
+
+}
+
+
+.tab-button li {
+    display: inline-block;
+    background-color: rgb(198, 195, 195);
+    margin-right: 6px;
+
+    color: white;
+    border-radius: 3px 3px 0 0;
+}
+
+.tab-button li:hover {
+    background-color: rgb(151, 151, 151);
+}
+
+.tab-button li.active {
+    background-color: rgb(120, 121, 121);
+}
+
+.panel-body {
+    background-color: rgb(163, 163, 163);
+    margin: 0 10px 3px 10px;
+    height: 120px;
+    border-radius: 0 0 6px 6px;
+
+    align-content: center;
+}
+
+
+
+
+.tab-panels {
+    height: 150px;
+}
+.panel-body .content {
+    padding: 20px;
+}
+.panel-body p {
+    margin: 1px;
+    font-size: 16px;
+}
+
+.panel-body p:first-child {
+    margin-top: 0;
+}
+
+
+.panel-body {
+    display: none;
+}
+
+
+.panel-body.active {
+    display: block;
+}

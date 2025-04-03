@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page!</title>
+
+    <style>
+        body {
+             background-color: rgb(44, 43, 43);
+             color: white;
+             /* font-family: Arial, Helvetica, sans-serif; */
+
+             margin: 0;
+             padding: 0;
+        }
+
+        header {
+            background-color: black;
+            padding: 20px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        section {
+            background-color: white;
+            color: gray;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        div {
+            background-color: red;
+            /*
+            display: block each container span across left to right
+            
+            display: inline all container will display in one line and each has the size of its content. this mode doesn't support set the width.
+
+            display: inline-block support set fixed width and height for the block
+            */
+            width: 80px;
+            margin: auto;
+        }
+
+        footer {
+            background-color: black;
+            padding: 10px 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Locations</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <h1>Title</h1>
+    </header>
+    <section>
+        <div>aaaa</div>
+        <div>b</div>
+        <div>c</div>
+    </section>
+    <section>lower-section</section>
+    <footer>footer</footer>
+</body>
+</html>

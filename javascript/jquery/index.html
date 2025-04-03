@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <header>
+        <h1>Let's Start!</h1>
+        <ul class="button-list">
+            <li>
+                <button id="btn1" class="panel-button" data-panelId="panel1">#btn1</button>
+            </li>
+            <li>
+                <button id="btn2" class="panel-button" data-panelid="panel2">#btn2</button>
+            </li>
+            <li>
+                <button id="btn3" class="panel-button" data-panelid="panel3">#btn3</button>
+            </li>
+            <li>
+                <button id="btn4" class="panel-button" data-panelid="panel4">#btn4</button>
+            </li>
+        </ul>
+    </header>
+
+
+    <main>
+        <ul class="panel-list" >
+            <div>
+                <li id="panel1">
+                    <h5>#panel1</h5>
+                    <p>content</p>
+                </li>
+            </div>
+            <div>
+                <li id="panel2">
+                    <h5>#panel2</h5>
+                    <p>content</p>
+                </li>
+            </div>
+            <div>
+                <li id="panel3">
+                    <h5>#panel3</h5>
+                    <p>content</p>
+                </li>
+            </div>
+            <div>
+                <li id="panel4">
+                    <h5>#panel4</h5>
+                    <p>content</p>
+                </li>
+            </div>
+        </ul>
+    </main>
+    
+
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+
+    <script>
+        // $(document).ready(
+        //     function () {
+        //         $("#panel1").hide(1000).delay(1000).show(1000);
+        //         // $("#panel1").fadeToggle(1000).delay(1000).fadeToggle(1000);
+
+        //         $("#panel2").css(
+        //             {
+        //                 color:'red',
+        //                 fontWeight: 'bold',
+        //                 opacity: .5
+        //             }
+        //         )
+        //     }
+        // )
+
+
+        // $(
+        //     function () {
+        //         $("#btn1").on("mouseover", function () {
+        //             $("#panel1").fadeToggle(300);
+        //         }
+        //         )
+        //         $("#btn2").on("mouseover", function () {
+        //             $("#panel2").fadeToggle(300);
+        //         }
+        //         )
+        //         $("#btn3").on("mouseover", function () {
+        //             $("#panel3").fadeToggle(300);
+        //         }
+        //         )
+        //         $("#btn4").on("mouseover", function () {
+        //             $("#panel4").fadeToggle(300);
+        //         }
+        //         )
+                
+        //     }
+        // )
+
+
+
+        $(function () {
+
+            var new_content = "New content"
+
+            $(".panel-button").on("click", function () {
+                console.log($(this).attr("id"));
+
+                var panelId = $(this).attr("data-panelid");
+
+                $("#" + panelId).toggle(1000);
+
+                $("#" + panelId + " p").html(new_content);
+            })
+            
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .special {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <ul class="list">
+            <li>one</li>
+            <li class="special">two</li>
+            <li>three</li>
+            <li>
+                <ul class="sublist">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+
+    <script src="./scripts/jquery-3.7.1.js"></script>
+    <script>
+
+        $(function () {
+            $("li").on("click", function () {
+                // $(this).removeClass("special");
+                // $(this).siblings().addClass("special");
+
+                // $(this).hide();
+
+                // $(this).closest('.list').addClass('special');
+
+                // $(this).hide();
+
+                if ( $(this).parent().is('.sublist') ) {
+                    $(this).hide();
+                }
+
+                console.log(this, "clicked");
+
+                if( $(this).is(".special") ) {
+                    alert('special');
+                }
+            })
+            
+            // $('.sublist li').on('click', function () {
+            //     $(this).hide();
+            // })
+            // $('.list').on('click', function () {
+            //     // $(this).find('li').filter('.special').remove();
+            //     $(this).find('li').filter(':first').addClass('special');
+            // })
+        })
+    </script>
+</body>
+</html>

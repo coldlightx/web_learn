@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        header {
+            color: white;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            background: gray;
+            display: inline-block;
+            border-radius: 3px;
+            padding: 3px;
+            margin-left: 10px;
+        }
+
+        /* 
+        psedu class
+        */
+        li:first-child {
+            margin-left: 0;
+        }
+
+        li:hover {
+            background: red;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 
+        class use
+        */
+        .feature-box {
+            display: flex;
+        }
+
+        .feature-box div{
+            margin: 3px;
+            width: 100%;
+        }
+
+
+        .feature-box.sales div{
+            background: red;
+        }
+
+        .feature-box.colors div{
+            background: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Locations</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Direction</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="feature-box sales">
+        <div>section 1</div>
+        <div>section 2</div>
+        <div>section 3</div>
+    </section>
+    <section class="feature-box colors">
+        <div>section 4</div>
+        <div>section 5</div>
+    </section>
+    
+</body>
+</html>

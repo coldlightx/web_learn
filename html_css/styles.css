@@ -1,0 +1,175 @@
+body {
+    background-color: rgb(44, 43, 43);
+    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* HEADER */
+
+header {
+    background-color: black;
+    background-image: url("./images/wallhaven-49ez6x.jpeg");
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    height: 400px;
+    
+}
+
+
+header a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+header .logo a {
+    background-image: url("./images/logo.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    text-indent: -9999999999px;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li.mobile {
+    display: none;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 610px) {
+    nav li.mobile {
+        display: inline-block;
+    }
+
+    nav li.desktop {
+        display: none;
+    }
+
+    nav li.logo {
+        padding-top: 10px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 680px){
+    header {
+            height: 250px;
+        }
+}
+
+
+/* FEATURES */
+
+.features {
+    background-color: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+
+
+.features figure {
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.features figure img {
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 10px gray;
+}
+
+.features figure figcaption {
+    color: black;
+}
+
+
+div {
+    background-color: red;
+    /*
+            display: block each container span across left to right
+            
+            display: inline all container will display in one line and each has the size of its content. this mode doesn't support set the width.
+
+            display: inline-block support set fixed width and height for the block
+            */
+    width: 80px;
+    margin: auto;
+}
+
+
+
+/* @media screen and (max-width: 610px){
+
+    .features {
+        display: block;
+    }
+    
+} */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* min-width<= current-width <= max-width
+@media screen and (min-width: 600px) {
+    .features {
+        background-color: pink;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .features {
+        background: red;
+    }
+} */
+
+

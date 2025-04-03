@@ -1,0 +1,52 @@
+
+
+
+header {
+
+    text-align: center;
+
+}
+
+main {
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    justify-content: center;
+}
+
+
+.window {
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+
+    /* 也可实现水平居中 */
+    /* margin: 0 auto;  */
+
+}
+
+
+
+ul.slider {
+    width: 7000px;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.slide {
+    float: left;
+    list-style-type: none;
+    /* display: inline-block; */
+}
+
+.slide img {
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
