@@ -1,0 +1,68 @@
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    justify-items: center;
+}
+
+header {
+    background-color: rgb(202, 202, 202);
+    justify-items: center;
+    align-content: center;
+    height: 150px;
+    width: 300px;
+    margin-top: 50px;
+}
+
+
+#people {
+    justify-items: center;
+}
+
+#person-list {
+
+    padding: 0px;
+    margin-top: 10px;
+    display: flex;
+    margin: 10px 50px 10px 50px;
+    flex-wrap: wrap;
+}
+
+#person-list li {
+    margin-right: 10px;
+    padding: 3px;
+    border-radius: 5px;
+    list-style-type: none;
+    width: 150px;
+    background-color: aqua;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+#person-list li:last-child {
+    margin-right: 0px;
+}
+
+
+#person-list li span {
+    width: 90%;
+}
+
+#person-list li i {
+    background-color:rgb(184, 183, 183);
+    border-radius: 50%;
+    height: 16px;
+    width:16px;
+    color: white;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#person-list li i:hover {
+    background-color: gray;
+}

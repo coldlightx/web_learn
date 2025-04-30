@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Modular JS</h1>
+    </header>
+
+    <main>
+
+        <div id="people">
+            <h2>People</h2>
+            <div>
+                <input id="name-input" type="text" placeholder="name">
+                <button id="add-person">Add Person</button>
+            </div>
+
+            <ul id="person-list">
+            </ul>
+
+
+            <template id="person-template">
+            {{#person}}
+                <li>
+                    <span>{{.}}</span>
+                    <i class="delete-person">X</i>
+                </li>
+            {{/person}}
+            </template>
+
+
+        </div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+    <script src="./scripts/script.js"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>
