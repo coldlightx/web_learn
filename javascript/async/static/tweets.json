@@ -1,0 +1,14 @@
+{
+    "user_id": 123567,
+    "id": 1,
+    "username": "supera",
+    "tweets": "Hello, World!",
+    "usersMentioned": [
+        {
+            "id": 120092,
+            "username": "Adam",
+            "userAuthLevel": "user"
+        }
+    ]
+}
+
