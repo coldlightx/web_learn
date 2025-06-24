@@ -1,0 +1,17 @@
+body {
+  font-family: inter, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+#root {
+  display: flex;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

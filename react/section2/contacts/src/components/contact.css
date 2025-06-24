@@ -1,0 +1,41 @@
+.contact {
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0px gray;
+    width: 216px;
+    height: 260px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+}
+
+.contact .photo {
+    width: 200px;
+    margin: 5px;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.contact .info {
+    margin: 5px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h2.info {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.contact .info > img {
+    width: 0.8em;
+    margin-right: 0.6em;
+}
+
+
+.contact .info span {
+    font-size: 0.8em;
+}
