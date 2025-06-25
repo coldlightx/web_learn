@@ -1,29 +1,33 @@
 import Contact from "./components/contact";
+import mrWhiskerson from "/images/mr-whiskerson.png";
+import fluffykins from "/images/fluffykins.png";
+import felix from "/images/felix.png";
+import pumpkin from "/images/pumpkin.png";
 
 export default function App() {
   return (
     <>
       <div className="contact-container">
         <Contact
-          img="/public/images/mr-whiskerson.png"
+          img={mrWhiskerson}
           name="Mr. Whiskerson"
           phone="(212) 555-1234"
           email="mr.whiskaz@catnap.meow"
         />
         <Contact
-          img="/public/images/fluffykins.png"
+          img={fluffykins}
           name="Fluffykins"
           phone="(212) 555-2345"
           email="fluff@me.com"
         />
         <Contact
-          img="/public/images/felix.png"
+          img={felix}
           name="Felix"
           phone="(212) 555-4567"
           email="thecat@hotmail.com"
         />
         <Contact
-          img="/public/images/pumpkin.png"
+          img={pumpkin}
           name="Pumpkin"
           phone="(0800) CAT KING"
           email="pumpkin@abc.com"
