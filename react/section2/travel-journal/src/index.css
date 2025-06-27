@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: Inter, sans-serif;
+}
+
+header {
+  background-color: rgb(240, 100, 100);
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.nav-list {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list li {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.entry {
+  padding: 20px;
+  display: flex;
+
+  height: 200px;
+}
+
+.entry .title-image img {
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.entry .title-image {
+  margin-right: 18px;
+}
+
+
+.entry .text-area {
+  height: 200px;
+  padding-top: 10px;
+}
+.entry .text-area .title {
+  display: flex;
+  align-items: center;
+}
+
+.entry .text-area .title .position-marker {
+  height: 15px;
+  margin-right: 5px;
+}
+
+.entry .text-area .title .address {
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.entry .text-area .title .link {
+  margin-left: 20px;
+  color: rgb(151, 151, 151);
+}
+
+
+.entry .text-area h1 {
+  margin: 5px 0px 10px 0px;
+}
+
+.entry .text-area h5 {
+  margin: 20px 0px 5px 0px;
+}
+
+.entry .text-area .description {
+  line-height: 1.3em;
+  font-size: 0.9em;
+  margin: 10px 0px 0px 0px;
+}
